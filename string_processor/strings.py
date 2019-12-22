@@ -3,7 +3,7 @@ import re
 def text_cleaner(word):
     """Removes non-alphabet characters from a string. """
 
-    return re.sub('[^A-Za-z]+', '', word)
+    return re.sub('[^A-Za-z']+', '', word)
 
 def char_count(word):
     """Count number of characters in a word. """
