@@ -43,14 +43,14 @@ if __name__ == "__main__":
     #Iterate thru every words within the opened file.
     with open("sample.txt") as apple:
         for line in apple:
-            #Retrieve individual words by splitting with spaces.
+            #Retrieve individual words by splitting with spaces and process them.
             for word in line.split():
                 cleaned_text = text_cleaner(word)
                 text_char_count = char_count(cleaned_text)
                 list_processor(text_char_count=text_char_count, 
                                cleaned_text=cleaned_text, main_list=main_list)
 
-    #Print each list
+    #Print each list.
     for list_collection in main_list:
         print(len(list_collection[0]) ,list_collection)   
 
