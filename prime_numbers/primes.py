@@ -12,9 +12,10 @@ def my_primes(num):
         #List that will hold result of modulus operation.
         mod_result = []
 
-		#Test each numbers with single prime numbers (2, 3, 5, 7).
-		#If x number is not equal to y number, perform modulus operation
-        #and append result to list. (Equal x and y will result to 0 in modulus.)
+        ''' Test each numbers with single prime numbers (2, 3, 5, 7).
+		    If x number is not equal to y number, perform modulus operation
+            and append result to list. 
+            (Equal x and y will result to 0 in modulus so we avoid this one.) '''
         mod_result = [ (x % y) for y in (2, 3, 5, 7) if x != y ]
 
 		#If result 0 is not on the list, then the number is prime.
